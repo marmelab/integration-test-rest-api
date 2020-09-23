@@ -7,11 +7,11 @@
   "scripts": {
     "dev": "nodemon ./src/index.js",
     "start": "node ./src/index.js",
-    "test": "NODE_OPTIONS='--experimental-vm-modules' jest -c jest.unit.config.js",
-    "test:watch": "NODE_OPTIONS='--experimental-vm-modules' jest -c jest.unit.config.js --watch",
+    "test:unit": "NODE_OPTIONS='--experimental-vm-modules' jest -c jest.unit.config.js",
+    "test:unit:watch": "NODE_OPTIONS='--experimental-vm-modules' jest -c jest.unit.config.js --watch",
     "test:integration": "NODE_OPTIONS='--experimental-vm-modules' jest -c jest.integration.config.js",
-    "test:integration-watch": "NODE_OPTIONS='--experimental-vm-modules' jest -c jest.integration.config.js --watch",
     "test:integration:ci": "start-server-and-test start http://localhost:3000 test:integration",
+    "test:integration-watch": "NODE_OPTIONS='--experimental-vm-modules' jest -c jest.integration.config.js --watch",
     "test:integration:watch": "start-server-and-test start http://localhost:3000 test:integration-watch"
   },
   "repository": {
